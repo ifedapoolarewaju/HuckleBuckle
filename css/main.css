@@ -269,6 +269,15 @@ Resposiveness
 
 @media screen and (max-width: 740px)
 {
+	body {
+	background: url("../img/bg9.jpg");
+	background-repeat: no-repeat;
+	background-size: clip;
+	font-family: cooper;
+	background-color: #53ab1f;
+	}
+
+	
 	
 	header h1{
 		font-size: 5em;
@@ -277,6 +286,7 @@ Resposiveness
 	.form_wrapper, #output_block{
 		width: 70%;
 	}
+
 
 	#heat_scale_wrapper{
 		width: 80%;
@@ -301,6 +311,7 @@ Resposiveness
 
 @media screen and (max-width: 520px)
 {
+
 
 	header h1{
 		font-size: 3em;
