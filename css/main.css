@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/********************************
+reset section
+*********************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/************************************************
+custom css
+*************************************************/
+body {
+	background: url("../img/bg9.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: cooper;
+	background-color: #53ab1f;
+}
+
+
+
+/**************************************************
+header
+**************************************************/
+
+header{
+	text-align: center;
+	padding-top: 20px;
+	color: green;
+}
+
+
+
+header h1{
+	font-weight: bolder;
+	font-size: 6.5em;
+	text-shadow:0px 5px #351b0e;
+	font-family: ravie;
+}
+
+p{
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+
+/**********************************************
+main section
+*********************************************/
+
+.form_wrapper, button, #winner_block{
+	background-color: #53ab1f;
+}
+
+#winner_block, #beanstalk_msg_block, #output_block, #user_input, #form_wrapper, button{
+	display: block;
+	text-align: center;
+}
+
+
+#user_input, #output_block{
+	background-color: #eeea6d;
+	box-shadow: inset 0px 5px #acbc53;
+}
+
+
+.form_wrapper{
+	border:15px solid #eeea6d;
+	border-radius: 5%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 35%;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+
+#user_input{
+	border:0px;
+	height:30px;
+	width:80px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 5px 5px;
+}
+
+
+#user_input:focus{
+	border:1px solid #eeea6d;
+}
+
+
+
+
+button{
+	border: 5px solid #eeea6d;
+	box-shadow: 0px 5px #267d12;
+	border-radius: 5%;
+	outline-width: 2px;
+	font-weight: bold;
+	font-size: 0.9em;
+	font-family: inherit;
+	color: #444;
+	margin: 0 auto;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+
+
+
+button:focus, #user_input:focus{
+	outline-color: #eeea6d;
+}
+
+
+
+
+button:hover, button:active{
+	background-color: green;
+	outline-color: #eeea6d;
+	color: #eeea6d;
+}
+
+
+button:active{
+	margin-top: 15px;
+}
+
+
+
+#output_block{
+	border-radius: 15%;
+	border: 1px solid #84ba58;
+	margin: 0 auto;
+	outline-width: 2px;
+	font-weight: bold;
+	font-size: 1.3em;
+	font-family: jokerman;
+	color: #444;
+	margin: 0 auto;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	width: 50%;
+	height:60px;
+	position: static;
+	padding-top: 10px;
+	overflow: auto;
+}
+
+#heat_scale_wrapper{
+	border:  5px solid #53ab1f;
+	outline-color: #53ab1f;
+	background-color: #dd0000;
+	width:30%;
+	text-align: center;
+	border-radius: 10%;
+	padding: 0.5px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+
+
+#heat_scale{
+	width: 90%;
+	background: red;
+}
+
+
+#beanstalk_msg_block{
+	border-radius: 15%;
+	border: 1px solid #84ba58;
+	background-color: #eeea6d;
+	margin: 0 auto;
+	outline-width: 2px;
+	font-weight: bold;
+	font-size: 1.4em;
+	font-family: jokerman;
+	color: #444;
+	margin: 12px 0 auto;
+	width: 200px;
+	height:80px;
+	position: absolute;
+	right: 200px;
+	bottom: 300px;
+	padding-top: 20px;
+	overflow: auto;
+}
+
+
+#winner_block{
+	border-radius: 15%;
+	border: 1px solid #84ba58;
+	margin: 0 auto;
+	outline-width: 2px;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #eeea6d;
+	margin: 0 auto;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	width: 200px;
+	height:180px;
+	position: fixed;	
+	left: 200px;
+	bottom: 300px;
+	padding-top: 40px;
+	overflow: auto;	
+}
+
+
+/************************************************************
+Resposiveness
+*************************************************************/
+
+@media screen and (max-width: 740px)
+{
+	
+	header h1{
+		font-size: 5em;
+	}
+
+	.form_wrapper, #output_block{
+		width: 70%;
+	}
+
+	#heat_scale_wrapper{
+		width: 80%;
+	}
+
+	#output_block{
+		font-size: 1.3em;
+	}
+
+	#winner_block{
+		position: absolute;
+		top: 50px;
+		left: 50px;
+	}
+
+	#beanstalk_msg_block{
+		left: 20px;
+	}
+
+}
+
+
+@media screen and (max-width: 520px)
+{
+
+	header h1{
+		font-size: 3em;
+	}
+}
+
+
+
+
+
+
