@@ -325,6 +325,10 @@ Resposiveness
 	header h1{
 		font-size: 3em;
 	}
+
+	.form_wrapper{
+		width: 300px;
+	}
 }
 
 
