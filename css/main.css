@@ -278,19 +278,23 @@ Resposiveness
 	height: 100%;
 	}
 
-	
+	header p{
+		font-size: 1.2em;
+	}
 	
 	header h1{
 		font-size: 5em;
 	}
 
-	.form_wrapper, #output_block{
+	.form_wrapper{
+		width: 300px;
+	}
+	#output_block{
 		width: 70%;
 	}
 
-
 	#heat_scale_wrapper{
-		width: 80%;
+		width: 300px;
 	}
 
 	#output_block{
