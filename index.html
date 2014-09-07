@@ -6,16 +6,25 @@
 	</head>
 	<body>
 		<header>
-			
+			<h1>Huckle Buckle Beanstalk</h1>
+			<p>Pick a number between 1 and 100</p>
 		</header>
-		<div class="form_wrapper">
-			<form id="game_form">
-				<input type="text" id = "user_input">
-				<button id="input_submit" type="button">Find Bean</button>
-				<button id="restart_button" type="button">Restart Game</button>
-			</form>
-			<span id="output_block"></span>
-		</div>
+		<section>
+			<div class="form_wrapper">
+				<h2></h2>
+				<form id="game_form">
+					<input type="text" id = "user_input">
+					<button id="input_submit" type="button">Find Bean</button>
+					<button id="restart_button" type="button">Restart Game</button>
+				</form>
+				<span id="output_block"></span>
+			</div>
+			<span id="winner_block"></span>
+			<span id="beanstalk_msg_block"></span>
+			<div id="heat_scale_wrapper">
+				<input type="range" max="100" min="0" id="heat_scale">
+			</div>
+		</section>
 	</body>
 	<script type="text/javascript" src="js/jquery-1.11.1.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/app.js" charset="utf-8"></script>
