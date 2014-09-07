@@ -311,6 +311,13 @@ Resposiveness
 
 @media screen and (max-width: 520px)
 {
+	body {
+	background: url("../img/bg9.jpg");
+	background-repeat: no-repeat;
+	background-size: clip;
+	font-family: cooper;
+	background-color: #53ab1f;
+	}
 
 
 	header h1{
