@@ -44,6 +44,13 @@ var gameManager = {
 
 	invalidInputMsg : "Input invalid",
 
+	onReady: function(){
+		gameManager.reset();
+		$("#input_submit").click(gameManager.handleUserInput);
+		$("#restart_button").click(gameManager.reset);
+	},
+
+
 	//resets the game
 	reset: function (){
 		beanstalk.keep();
@@ -126,10 +133,7 @@ var gameManager = {
 					GAMEPLAY
 **********************************************************/
 //resets game once document is ready
-$(document).ready(gameManager.reset);
-
-$("#input_submit").click(gameManager.handleUserInput);
-$("#restart_button").click(gameManager.reset);
+$(document).ready(gameManager.onReady);
 
 //prevents enter key from submitting form before user input is passed to handler
 $("#user_input").keypress(function(event){
